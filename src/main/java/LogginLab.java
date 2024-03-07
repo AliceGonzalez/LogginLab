@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -15,7 +16,6 @@ public class LogginLab {
         logger.log(Level.INFO, "Hello World!");
         logger.log(Level.SEVERE, "Terrible Error!");
         logger.log(Level.WARNING, "Not So Bad Error!");
-
         logger.log(Level.INFO, "****\n\tAt ZipCode, \n\twe don't use System.out.Println \n\tuntil we've earned the right.\n****");
 
     }
@@ -39,9 +39,10 @@ public class LogginLab {
     // use thresholdExceeds for a pattern.
     // Write a test for the method in the Test class.
     public boolean thresholdReached(Integer limit) {
-        if (limit > this.threshold) {
+        if(this.threshold.equals(limit)) {
             return true;
+        }else {
+            return false;
         }
-        return false;
     }
 }

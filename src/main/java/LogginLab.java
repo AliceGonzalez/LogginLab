@@ -38,4 +38,10 @@ public class LogginLab {
     // Write a method called thresholdReached, returns true if argument 'limit' is over the threshold.
     // use thresholdExceeds for a pattern.
     // Write a test for the method in the Test class.
+    public boolean thresholdReached{
+        if (threshold > thresholdExceeds(
+                return true;
+        )
+        return false;
+    }
 }
